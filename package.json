@@ -1,0 +1,19 @@
+{
+  "name": "aquiverdiscord-bot",
+  "version": "1.0.0",
+  "description": "Aquiver Discord Bot",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AquiverMC/AquiverDiscord-Bot.git"
+  },
+  "author": "Timtendo12",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AquiverMC/AquiverDiscord-Bot/issues"
+  },
+  "homepage": "https://github.com/AquiverMC/AquiverDiscord-Bot#readme"
+}
