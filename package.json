@@ -18,6 +18,7 @@
   "homepage": "https://github.com/AquiverMC/AquiverDiscord-Bot#readme",
   "dependencies": {
     "discord.js": "^13.3.1",
-    "images-generator": "^3.3.2"
+    "images-generator": "^3.3.2",
+    "unique-random-array": "^3.0.0"
   }
 }
