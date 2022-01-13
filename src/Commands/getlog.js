@@ -58,7 +58,7 @@ module.exports = new Command({
             const noDefinedLog = new MessageEmbed()
                 .setTitle("Please tell me which log file you want to view")
                 .setDescription(`Usage: ${config.prefix}getlog general/botcommands/media`)
-                .setAuthor(`${client.user.tag}`, `${client.user.displayAvatarURL()}`, `https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley`)
+                .setAuthor({ name:`${client.user.tag}`,icon_url:`${client.user.displayAvatarURL()}`,url: `https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley`})
             message.reply({embeds: [noDefinedLog]});
             return;
         }
@@ -77,7 +77,7 @@ module.exports = new Command({
                 .setTitle(`${title}`)
                 .setURL(`${data}`)
                 .setColor('AQUA')
-                .setAuthor(`${message.author.tag}`, `${message.author.displayAvatarURL()}`, `${data}`)
+                .setAuthor({name: `${message.author.tag}`,icon_url: `${message.author.displayAvatarURL()}`,url: `${data}`})
                 .setTimestamp()
                 .addFields(
                     { name: 'Channel:', value: ch? ch : `No reason specified`, inline: true },
