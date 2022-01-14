@@ -21,11 +21,13 @@ module.exports = new Command({
                 .setDescription(`${messages[messagesPick]}`)
                 .setColor("RANDOM")
                 .setImage(animalImage)
+                .setAuthor({name:`${config.botName}`,icon_url: `${config.botIcon}`,url: `${config.botGitHub}`})
                 .setTimestamp();
             message.channel.send({embeds: [animalEmbed]});
         } else {
             const noBotChannel = new Discord.MessageEmbed()
                 .setDescription(`Please use this command in <#${config.botChannelID}>`)
+                .setAuthor({name:`${config.botName}`,icon_url: `${config.botIcon}`,url: `${config.botGitHub}`})
                 .setColor("DARK_RED")
                 .setTitle("No Permission.")
             message.reply({ embeds: [noBotChannel]});
