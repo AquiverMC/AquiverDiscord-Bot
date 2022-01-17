@@ -116,7 +116,7 @@ module.exports = new Event("ready", (client, message) => {
                     console.log(err);
                     return;
                 }
-                console.log(dir2)
+                //console.log(dir2)
             });
         })
     }

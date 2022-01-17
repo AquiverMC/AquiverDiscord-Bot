@@ -61,7 +61,7 @@ module.exports = new Command({
             .setColor("RED")
             .addFields(
                 { name: 'Reason:', value: reason? reason : `No reason specified`, inline: true },
-                { name: `kickned by:`, value: message.member.user.username, inline: true}
+                { name: `kicked by:`, value: message.member.user.username, inline: true}
             )
             .setTimestamp()
 
